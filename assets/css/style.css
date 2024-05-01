@@ -60,3 +60,17 @@ body {
   cursor: pointer;
 }
 
+/* Score Board */
+.score {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vw;
+  text-align: center;
+}
+
+/* Score */
+.p-count, .c-count {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
