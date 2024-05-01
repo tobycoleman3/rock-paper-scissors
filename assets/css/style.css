@@ -17,8 +17,8 @@ body {
   font-size: 3rem;
   z-index: 2;
   text-align: center;
-}
 
+}
 /* Rules button */
 #rulesBtn {
   font-size: 20px;
@@ -60,6 +60,15 @@ body {
   cursor: pointer;
 }
 
+/* Moves */
+.moves {
+
+}
+/* Restart button */
+.restartBtn {
+  font-size: 20px;
+  left: 10%;
+}
 /* Score Board */
 .score {
   display: flex;
@@ -72,5 +81,5 @@ body {
 .p-count, .c-count {
   text-align: center;
   font-size: 1.5rem;
-  margin-top: 1rem;
+  
 }
