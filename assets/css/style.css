@@ -11,6 +11,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* Heading */
+.heading {
+  top: 0;
+  font-size: 3rem;
+  z-index: 2;
+  text-align: center;
+}
 
 /* Rules button */
 #rulesBtn {
