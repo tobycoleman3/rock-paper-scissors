@@ -60,14 +60,52 @@ body {
   cursor: pointer;
 }
 
-/* Moves */
-.moves {
 
-}
 /* Restart button */
 .restartBtn {
   font-size: 20px;
   left: 10%;
+}
+/* Choices buttons */
+.rock {
+  font-size: 40px;
+  transition-duration: 0.6s;
+  border-radius: 20%;
+}
+.rock:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.paper {
+  font-size: 40px;
+  transition-duration: 0.6s;
+  border-radius: 20%;
+}
+.paper:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.scissors {
+  font-size: 40px;
+  transition-duration: 0.6s;
+  border-radius: 20%;
+}
+.scissors:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.lizard {
+  font-size: 40px;
+  transition-duration: 0.6s;
+  border-radius: 20%;
+}
+.lizard:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.spock {
+  font-size: 40px;
+  transition-duration: 0.6s;
+  border-radius: 20%;
+}
+.spock:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 /* Score Board */
 .score {
