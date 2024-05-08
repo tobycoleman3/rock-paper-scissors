@@ -67,6 +67,12 @@ body {
   left: 10%;
 }
 /* Choices buttons */
+.choices {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
 .rock {
   font-size: 40px;
   transition-duration: 0.6s;
