@@ -26,7 +26,7 @@ const game = () => {
   let moves = 0;
 
   // Function to
-  const playGame - () => {
+  const playGame = () => {
     const rockBtn = document.querySelector('.rock');
     const paperBtn = document.querySelector('.paper');
     const scissorsBtn = document.querySelector('.scissors');
@@ -52,5 +52,28 @@ const game = () => {
         }
       })
     )
+  }
+}
+
+// How to decide winner
+const winner = (player, computer) => {
+  const result = document.querySelector('result');
+  const playerScoreBoard = document.querySelector('p-count');
+  const computerScoreBoard = document.querySelector('c-count');
+  player = player.toLowerCase();
+  computer = computer.toLowerCase();
+  if (player === computer) {
+    result.textContent = 'Tie'
+  } 
+  else if (player == 'rock') {
+    if (computer == 'paper') {
+      result.textContent = 'Computer Won';
+      computerScore ++;
+      computerScoreBoard.textContent = computerScore;
+    } else {
+      result.textContent = 'Player Won'
+      playerScore++;
+      playerScoreBoard.textContent = playerScore;
+    }
   }
 }
