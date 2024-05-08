@@ -33,26 +33,30 @@ const game = () => {
     const lizardBtn = document.querySelector('.lizard');
     const spockBtn = document.querySelector('.spock');
     const playerOptions = [rockBtn, paperBtn, scissorsBtn, lizardBtn, spockBtn];
-    const computerOptions = [rockBtn, paperBtn, scissorsBtn, lizardBtn, spockBtn];
+    const computerOptions = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 
     //Funtion to start playing the game
-    playerOptions.forEach(option =>
+    playerOptions.forEach(option => {
       option.addEventListener('click', function () {
-        const movesLeft = document.querySelector('movesleft');
-        moves++;
-        movesLeft.innerText = `Moves Left: ${10 - moves}`;
-        const choiceNumber = Math.floor(Math.random() * 5);
-        const computerChoice = computerOptions[choiceNumber];
 
-        // Function to check who wins
-        winner(this.innerText, computerChoice)
-        // Calling game over after 10 moves
-        if (moves == 10) {
-          gameOver(playOptions, movesLeft);
-        }
+          const movesLeft = document.querySelector('.movesleft');
+          moves++;
+          movesLeft.innerText = `Moves Left: ${10 - moves}`;
+
+
+          const choiceNumber = Math.floor(Math.random() * 3);
+          const computerChoice = computerOptions[choiceNumber];
+
+          // Function to check who wins
+          winner(this.innerText, computerChoice)
+
+          // Calling gameOver function after 10 moves
+          if (moves == 10) {
+              gameOver(playerOptions, movesLeft);
+          }
       })
-    )
-  }
+  })
+
 }
 
 // How to decide winner
