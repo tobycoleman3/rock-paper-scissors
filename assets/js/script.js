@@ -34,5 +34,16 @@ const game = () => {
     const spockBtn = document.querySelector('.spock');
     const playerOptions = [rockBtn, paperBtn, scissorsBtn, lizardBtn, spockBtn];
     const computerOptions = [rockBtn, paperBtn, scissorsBtn, lizardBtn, spockBtn];
+
+    //Funtion to start playing the game
+    playerOptions.forEach(option =>
+      option.addEventListener('click', function () {
+        const movesLeft = document.querySelector('movesleft');
+        moves++;
+        movesLeft.innerText = `Moves Left: ${10 - moves}`;
+        const choiceNumber = Math.floor(Math.random() * 5);
+        const computerChoice = computerOptions[choiceNumber];
+      })
+    )
   }
 }
