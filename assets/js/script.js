@@ -26,7 +26,7 @@ const game = () => {
   let moves = 0;
 
   // Function to
-  const playGame = () => {
+const playGame = () => {
     const rockBtn = document.querySelector('.rock');
     const paperBtn = document.querySelector('.paper');
     const scissorsBtn = document.querySelector('.scissors');
@@ -56,14 +56,15 @@ const game = () => {
           }
       })
   })
-
 }
+playGame();
 
 // How to decide winner
 const winner = (player, computer) => {
-  const result = document.querySelector('result');
-  const playerScoreBoard = document.querySelector('p-count');
-  const computerScoreBoard = document.querySelector('c-count');
+  const result = document.querySelector('.result');
+  console.log("results:", result)
+  const playerScoreBoard = document.querySelector('.p-count');
+  const computerScoreBoard = document.querySelector('.c-count');
   player = player.toLowerCase();
   computer = computer.toLowerCase();
   if (player === computer) {
@@ -180,4 +181,6 @@ const winner = (player, computer) => {
     }
   }
 }
+}
+game();
 
