@@ -18,3 +18,21 @@ window.onclick = function(event) {
     modal.style.display = "none"
   }
 }
+
+// game logic
+const game = () => {
+  let playerScore = 0;
+  let computerScore = 0;
+  let moves = 0;
+
+  // Function to
+  const playGame - () => {
+    const rockBtn = document.querySelector('.rock');
+    const paperBtn = document.querySelector('.paper');
+    const scissorsBtn = document.querySelector('.scissors');
+    const lizardBtn = document.querySelector('.lizard');
+    const spockBtn = document.querySelector('.spock');
+    const playerOptions = [rockBtn, paperBtn, scissorsBtn, lizardBtn, spockBtn];
+    const computerOptions = [rockBtn, paperBtn, scissorsBtn, lizardBtn, spockBtn];
+  }
+}
