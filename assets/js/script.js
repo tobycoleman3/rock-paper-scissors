@@ -182,5 +182,22 @@ const winner = (player, computer) => {
   }
 }
 }
-game();
+// Funtion to run when game is over
+const gameOver = (playerOptions, movesLeft) => {
+  const chooseMove = document.querySelector('.move');
+  const result = document.querySelector('.result');
+  const reload = document.querySelector('.reload');
+  playerOptions.forEach(option => {
+    option.style.display = 'none';
+  })
 
+  chooseMove.innerText = 'Game Over!'
+  movesLeft.style.display = 'none';
+
+  if (playerScore > computerScore) {
+    result.innerText = 'Congratulations! You Won The Game!'
+  }
+
+}
+
+game();
