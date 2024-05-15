@@ -62,7 +62,7 @@ body {
 
 
 /* Restart button */
-.restartBtn {
+#restartBtn {
   font-size: 20px;
   left: 10%;
 }

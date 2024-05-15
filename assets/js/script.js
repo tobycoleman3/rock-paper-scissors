@@ -57,7 +57,7 @@ const playGame = () => {
       })
   })
 }
-playGame();
+
 
 // How to decide winner
 const winner = (player, computer) => {
@@ -181,7 +181,7 @@ const winner = (player, computer) => {
     }
   }
 }
-}
+
 // Funtion to run when game is over
 const gameOver = (playerOptions, movesLeft) => {
   const chooseMove = document.querySelector('.move');
@@ -209,13 +209,15 @@ const gameOver = (playerOptions, movesLeft) => {
     result.innerText = 'Tie!!';
     result.style.color = '#308D46';
   }
-  reloadBtn.innerText = 'Restart';
-  reloadBtn.style.display = 'flex';
-  reloadBtn.addEventListener('click', () => {
+  
+  const btnRestart = document.getElementById("restartBtn");
+  function handleClick() {
     window.location.reload();
-  })
+  }
+  btnRestart.addEventListener('click', handleClick)
 }
-
+playGame();
+}
 
 
 game();
