@@ -209,7 +209,13 @@ const gameOver = (playerOptions, movesLeft) => {
     result.innerText = 'Tie!!';
     result.style.color = '#308D46';
   }
-
+  reloadBtn.innerText = 'Restart';
+  reloadBtn.style.display = 'flex';
+  reloadBtn.addEventListener('click', () => {
+    window.location.reload();
+  })
 }
+
+
 
 game();
