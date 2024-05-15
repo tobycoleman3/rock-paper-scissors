@@ -195,7 +195,19 @@ const gameOver = (playerOptions, movesLeft) => {
   movesLeft.style.display = 'none';
 
   if (playerScore > computerScore) {
-    result.innerText = 'Congratulations! You Won The Game!'
+    result.style.fontSize = '2rem';
+    result.innerText = 'Congratulations! You Won The Game!';
+    result.style.color = '#308D46';
+  }
+  else if (playerScore < computerScore) {
+    result.style.fontSize = '2rem';
+    result.innerText = 'Unlucky! You Lost The Game!';
+    result.style.color = '#308D46';
+  }
+  else {
+    result.style.fontSize = '2rem';
+    result.innerText = 'Tie!!';
+    result.style.color = '#308D46';
   }
 
 }
