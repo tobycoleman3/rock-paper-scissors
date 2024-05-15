@@ -195,19 +195,19 @@ const gameOver = (playerOptions, movesLeft) => {
   movesLeft.style.display = 'none';
 
   if (playerScore > computerScore) {
-    result.style.fontSize = '2rem';
+    result.style.fontSize = '5rem';
     result.innerText = 'Congratulations! You Won The Game!';
     result.style.color = '#308D46';
   }
   else if (playerScore < computerScore) {
     result.style.fontSize = '2rem';
     result.innerText = 'Unlucky! You Lost The Game!';
-    result.style.color = '#308D46';
+    result.style.color = 'red';
   }
   else {
     result.style.fontSize = '2rem';
     result.innerText = 'Tie!!';
-    result.style.color = '#308D46';
+    result.style.color = 'black';
   }
   
   const btnRestart = document.getElementById("restartBtn");
