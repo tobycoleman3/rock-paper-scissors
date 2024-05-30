@@ -219,4 +219,5 @@ playGame();
 // Hide the rules button when the game has started
 function myFunction() {
   document.getElementById("rulesBtn").hidden = true;
+  document.getElementById("restartBtn").style.display = "center";
 }
