@@ -215,3 +215,8 @@ let moves = 0;
 }
 
 playGame();
+
+// Hide the rules button when the game has started
+function myFunction() {
+  document.getElementById("rulesBtn").hidden = true;
+}
