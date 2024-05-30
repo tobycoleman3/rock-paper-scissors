@@ -2,6 +2,10 @@
 body {
   background-color: beige;
 }
+/* Pointed Cursor */
+button {
+  cursor: pointer;
+}
 /* Game */
 .game {
   display: flex;
@@ -23,6 +27,7 @@ body {
 #rulesBtn {
   font-size: 20px;
   left: 10%;
+  border-radius: 10%;
 }
 
 /* The Modal */
@@ -34,6 +39,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 
 }
 
@@ -66,6 +72,7 @@ body {
 #restartBtn {
   font-size: 20px;
   left: 10%;
+  border-radius: 10%;
 }
 /* Choices buttons */
 .choices {
@@ -77,7 +84,8 @@ body {
 .rock {
   font-size: 40px;
   transition-duration: 0.6s;
-  border-radius: 20%;
+  border-radius: 10%;
+  padding: 15px;
 }
 .rock:hover {
   background-color: rgba(0, 0, 0, 0.2);
@@ -85,7 +93,8 @@ body {
 .paper {
   font-size: 40px;
   transition-duration: 0.6s;
-  border-radius: 20%;
+  border-radius: 10%;
+  padding: 15px;
 }
 .paper:hover {
   background-color: rgba(0, 0, 0, 0.2);
@@ -93,7 +102,8 @@ body {
 .scissors {
   font-size: 40px;
   transition-duration: 0.6s;
-  border-radius: 20%;
+  border-radius: 10%;
+  padding: 15px;
 }
 .scissors:hover {
   background-color: rgba(0, 0, 0, 0.2);
@@ -101,7 +111,8 @@ body {
 .lizard {
   font-size: 40px;
   transition-duration: 0.6s;
-  border-radius: 20%;
+  border-radius: 10%;
+  padding: 15px;
 }
 .lizard:hover {
   background-color: rgba(0, 0, 0, 0.2);
@@ -109,7 +120,8 @@ body {
 .spock {
   font-size: 40px;
   transition-duration: 0.6s;
-  border-radius: 20%;
+  border-radius: 10%;
+  padding: 15px;
 }
 .spock:hover {
   background-color: rgba(0, 0, 0, 0.2);
