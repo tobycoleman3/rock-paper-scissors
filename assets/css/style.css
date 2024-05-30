@@ -84,64 +84,16 @@ button {
 /* Choices buttons */
 .choices {
   display: flex;
-  justify-content: space-between;
-  width: 80%;
-}
-
-.rock {
-  font-size: 40px;
+  flex-wrap: wrap;
+  gap: 2rem;
   transition-duration: 0.6s;
   border-radius: 10%;
   padding: 15px;
 }
-
-.rock:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.paper {
+.choices button {
   font-size: 40px;
-  transition-duration: 0.6s;
-  border-radius: 10%;
-  padding: 15px;
 }
 
-.paper:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.scissors {
-  font-size: 40px;
-  transition-duration: 0.6s;
-  border-radius: 10%;
-  padding: 15px;
-}
-
-.scissors:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.lizard {
-  font-size: 40px;
-  transition-duration: 0.6s;
-  border-radius: 10%;
-  padding: 15px;
-}
-
-.lizard:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.spock {
-  font-size: 40px;
-  transition-duration: 0.6s;
-  border-radius: 10%;
-  padding: 15px;
-}
-
-.spock:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
 
 /* Score Board */
 .score {
