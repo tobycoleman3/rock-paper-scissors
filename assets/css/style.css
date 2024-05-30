@@ -2,10 +2,12 @@
 body {
   background-color: beige;
 }
+
 /* Pointed Cursor */
 button {
   cursor: pointer;
 }
+
 /* Game */
 .game {
   display: flex;
@@ -15,6 +17,7 @@ button {
   justify-content: center;
   align-items: center;
 }
+
 /* Heading */
 .heading {
   top: 0;
@@ -23,6 +26,7 @@ button {
   text-align: center;
 
 }
+
 /* Rules button */
 #rulesBtn {
   font-size: 20px;
@@ -61,7 +65,9 @@ button {
   font-size: 28px;
   font-weight: bold;
 }
-.close:hover, .close:focus {
+
+.close:hover,
+.close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -74,6 +80,7 @@ button {
   left: 10%;
   border-radius: 10%;
 }
+
 /* Choices buttons */
 .choices {
   display: flex;
@@ -87,45 +94,55 @@ button {
   border-radius: 10%;
   padding: 15px;
 }
+
 .rock:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 .paper {
   font-size: 40px;
   transition-duration: 0.6s;
   border-radius: 10%;
   padding: 15px;
 }
+
 .paper:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 .scissors {
   font-size: 40px;
   transition-duration: 0.6s;
   border-radius: 10%;
   padding: 15px;
 }
+
 .scissors:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 .lizard {
   font-size: 40px;
   transition-duration: 0.6s;
   border-radius: 10%;
   padding: 15px;
 }
+
 .lizard:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 .spock {
   font-size: 40px;
   transition-duration: 0.6s;
   border-radius: 10%;
   padding: 15px;
 }
+
 .spock:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 /* Score Board */
 .score {
   display: flex;
@@ -135,8 +152,9 @@ button {
 }
 
 /* Score */
-.p-count, .c-count {
+.p-count,
+.c-count {
   text-align: center;
   font-size: 1.5rem;
-  
+
 }
