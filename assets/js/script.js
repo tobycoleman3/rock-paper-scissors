@@ -19,48 +19,45 @@ window.onclick = function(event) {
   }
 }
 
-// game logic
-const game = () => {
-  let playerScore = 0;
-  let computerScore = 0;
-  let moves = 0;
+let playerScore = 0;
+let computerScore = 0;
+let moves = 0;
 
-  // Function to
-const playGame = () => {
-    const rockBtn = document.querySelector('.rock');
-    const paperBtn = document.querySelector('.paper');
-    const scissorsBtn = document.querySelector('.scissors');
-    const lizardBtn = document.querySelector('.lizard');
-    const spockBtn = document.querySelector('.spock');
-    const playerOptions = [rockBtn, paperBtn, scissorsBtn, lizardBtn, spockBtn];
-    const computerOptions = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+ // Function to
+ const playGame = () => {
+  const rockBtn = document.querySelector('.rock');
+  const paperBtn = document.querySelector('.paper');
+  const scissorsBtn = document.querySelector('.scissors');
+  const lizardBtn = document.querySelector('.lizard');
+  const spockBtn = document.querySelector('.spock');
+  const playerOptions = [rockBtn, paperBtn, scissorsBtn, lizardBtn, spockBtn];
+  const computerOptions = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 
-    //Funtion to start playing the game
-    playerOptions.forEach(option => {
-      option.addEventListener('click', function () {
+  //Funtion to start playing the game
+  playerOptions.forEach(option => {
+    option.addEventListener('click', function () {
 
-          const movesLeft = document.querySelector('.movesleft');
-          moves++;
-          movesLeft.innerText = `Moves Left: ${10 - moves}`;
+      const movesLeft = document.querySelector('.movesleft');
+      moves++;
+      movesLeft.innerText = `Moves Left: ${10 - moves}`;
 
 
-          const choiceNumber = Math.floor(Math.random() * 5);
-          const computerChoice = computerOptions[choiceNumber];
+      const choiceNumber = Math.floor(Math.random() * 5);
+      const computerChoice = computerOptions[choiceNumber];
 
-          // Function to check who wins
-          winner(this.innerText, computerChoice)
+      // Function to check who wins
+      winner(this.innerText, computerChoice)
 
-          // Calling gameOver function after 10 moves
-          if (moves == 10) {
-              gameOver(playerOptions, movesLeft);
-          }
-      })
+      // Calling gameOver function after 10 moves
+      if (moves == 10) {
+        gameOver(playerOptions, movesLeft);
+      }
+    })
   })
 }
 
-
-// How to decide winner
-const winner = (player, computer) => {
+ // How to decide winner
+ const winner = (player, computer) => {
   const result = document.querySelector('.result');
   console.log("results:", result)
   const playerScoreBoard = document.querySelector('.p-count');
@@ -69,11 +66,11 @@ const winner = (player, computer) => {
   computer = computer.toLowerCase();
   if (player === computer) {
     result.textContent = 'Tie'
-  } 
+  }
   else if (player == 'rock') {
     if (computer == 'paper') {
       result.textContent = 'Computer Won';
-      computerScore ++;
+      computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won'
@@ -84,7 +81,7 @@ const winner = (player, computer) => {
   else if (player == 'paper') {
     if (computer == 'scissors') {
       result.textContent = 'Computer Won';
-      computerScore ++;
+      computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won'
@@ -95,7 +92,7 @@ const winner = (player, computer) => {
   else if (player == 'lizard') {
     if (computer == 'rock') {
       result.textContent = 'Computer Won';
-      computerScore ++;
+      computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won'
@@ -106,7 +103,7 @@ const winner = (player, computer) => {
   else if (player == 'spock') {
     if (computer == 'lizard') {
       result.textContent = 'Computer Won';
-      computerScore ++;
+      computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won'
@@ -117,7 +114,7 @@ const winner = (player, computer) => {
   else if (player == 'scissors') {
     if (computer == 'spock') {
       result.textContent = 'Computer Won';
-      computerScore ++;
+      computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won'
@@ -128,7 +125,7 @@ const winner = (player, computer) => {
   else if (player == 'lizard') {
     if (computer == 'scissors') {
       result.textContent = 'Computer Won';
-      computerScore ++;
+      computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won'
@@ -139,7 +136,7 @@ const winner = (player, computer) => {
   else if (player == 'paper') {
     if (computer == 'lizard') {
       result.textContent = 'Computer Won';
-      computerScore ++;
+      computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won'
@@ -150,7 +147,7 @@ const winner = (player, computer) => {
   else if (player == 'spock') {
     if (computer == 'paper') {
       result.textContent = 'Computer Won';
-      computerScore ++;
+      computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won'
@@ -161,7 +158,7 @@ const winner = (player, computer) => {
   else if (player == 'rock') {
     if (computer == 'spock') {
       result.textContent = 'Computer Won';
-      computerScore ++;
+      computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won'
@@ -172,7 +169,7 @@ const winner = (player, computer) => {
   else if (player == 'scissors') {
     if (computer == 'rock') {
       result.textContent = 'Computer Won';
-      computerScore ++;
+      computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won'
@@ -182,8 +179,8 @@ const winner = (player, computer) => {
   }
 }
 
-// Funtion to run when game is over
-const gameOver = (playerOptions, movesLeft) => {
+ // Funtion to run when game is over
+ const gameOver = (playerOptions, movesLeft) => {
   const chooseMove = document.querySelector('.move');
   const result = document.querySelector('.result');
   const reload = document.querySelector('.reload');
@@ -209,15 +206,12 @@ const gameOver = (playerOptions, movesLeft) => {
     result.innerText = 'Tie!!';
     result.style.color = 'black';
   }
-  
+
   const btnRestart = document.getElementById("restartBtn");
   function handleClick() {
     window.location.reload();
   }
   btnRestart.addEventListener('click', handleClick)
 }
+
 playGame();
-}
-
-
-game();
