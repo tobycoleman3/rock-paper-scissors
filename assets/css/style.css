@@ -7,13 +7,14 @@ body {
 button {
   cursor: pointer;
 }
-/* Media query for phone size (max width 390px) */
+/* Media query for phone size (max width 320px) */
 @media only screen and (max-width: 320px) {
   .choices button { 
     float: none; 
     margin:0 auto;
-    font-size: 10px; 
+   
   }
+
   }
 /* Media query for tablet size (max width 768px) */
   @media only screen and (max-width: 768px) {
