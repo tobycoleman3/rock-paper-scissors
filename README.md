@@ -60,3 +60,22 @@ People who use this website will endure a game against the computer which can re
 ## Unfixed Bugs 
 
 - There are no unfixed bugs.
+
+# Deployment
+
+  - The site was deployed to GitHub pages. The steps to deploy are as followed:
+    - In the GitHub repository, navigate to the settings tab.
+    - From the source section drop-down menu, select the Master Branch.
+    - Once the Master Branch has been selected, the page provided the link to the completed website.
+  
+  The link to the website is as followed: [Rock, Paper, Scissors, Lizard, Spock!](https://tobycoleman3.github.io/rock-paper-scissors/)
+
+  # Credits
+
+  - I would like to give credit to my mentor Femi who guided me with the design of the website and advice on coding.
+  - I would like to give credit to the tutors at Code Institute for help on technical difficulties i encountered when building the website.
+  - I would like to give credit to the website w3schools which taught me knowledge for code i was stuck with [w3schools](https://www.w3schools.com/)
+
+  ## Media
+
+  - The icons used were taken from font awesome [Font Awesome](https://fontawesome.com/)
