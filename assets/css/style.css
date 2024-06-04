@@ -7,8 +7,26 @@ body {
 button {
   cursor: pointer;
 }
-
+/* Media query for phone size (max width 390px) */
+@media only screen and (max-width: 320px) {
+  .choices button { 
+    float: none; 
+    margin:0 auto;
+    font-size: 10px; 
+  }
+  }
+/* Media query for tablet size (max width 768px) */
+  @media only screen and (max-width: 768px) {
+    .choices button { 
+      float: none; 
+      margin:0 auto;
+      font-size: 10px;
+  }
+  }
+  /* Media query for laptop size (max width 1440px) */
+  @media only screen and (max-width: 1440px) {
 /* Game */
+
 .game {
   display: flex;
   flex-direction: column;
@@ -116,3 +134,4 @@ button {
   flex-wrap: wrap;
   gap: 2rem;
 }
+  }
