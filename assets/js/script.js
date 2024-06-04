@@ -6,18 +6,18 @@ var btn = document.getElementById('rulesBtn');
 var span = document.getElementsByClassName('close')[0];
 // when the user clicks the button it opens the modal
 btn.onclick = function () {
-  modal.style.display = "block"
-}
+  modal.style.display = "block";
+};
 // when the user clocks on span closes the modal 
 span.onclick = function () {
-  modal.style.display = "none"
-}
+  modal.style.display = "none";
+};
 // when the user clicks anywhere else closes the modal
 window.onclick = function (event) {
   if (event.target == modal) {
-    modal.style.display = "none"
+    modal.style.display = "none";
   }
-}
+};
 
 let playerScore = 0;
 let computerScore = 0;
@@ -46,15 +46,15 @@ const playGame = () => {
       const computerChoice = computerOptions[choiceNumber];
 
       // Function to check who wins
-      winner(this.innerText, computerChoice)
+      winner(this.innerText, computerChoice);
 
       // Calling gameOver function after 10 moves
       if (moves == 10) {
         gameOver(playerOptions, movesLeft);
       }
-    })
-  })
-}
+    });
+  });
+};
 
 // How to decide winner
 const winner = (player, computer) => {
@@ -65,7 +65,7 @@ const winner = (player, computer) => {
   player = player.toLowerCase();
   computer = computer.toLowerCase();
   if (player === computer) {
-    result.textContent = 'Tie'
+    result.textContent = 'Tie';
   }
   else if (player == 'rock') {
     if (computer == 'paper') {
@@ -73,7 +73,7 @@ const winner = (player, computer) => {
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
-      result.textContent = 'Player Won'
+      result.textContent = 'Player Won';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -84,7 +84,7 @@ const winner = (player, computer) => {
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
-      result.textContent = 'Player Won'
+      result.textContent = 'Player Won';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -95,7 +95,7 @@ const winner = (player, computer) => {
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
-      result.textContent = 'Player Won'
+      result.textContent = 'Player Won';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -106,7 +106,7 @@ const winner = (player, computer) => {
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
-      result.textContent = 'Player Won'
+      result.textContent = 'Player Won';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -117,7 +117,7 @@ const winner = (player, computer) => {
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
-      result.textContent = 'Player Won'
+      result.textContent = 'Player Won';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -128,7 +128,7 @@ const winner = (player, computer) => {
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
-      result.textContent = 'Player Won'
+      result.textContent = 'Player Won';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -139,7 +139,7 @@ const winner = (player, computer) => {
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
-      result.textContent = 'Player Won'
+      result.textContent = 'Player Won';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -150,7 +150,7 @@ const winner = (player, computer) => {
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
-      result.textContent = 'Player Won'
+      result.textContent = 'Player Won';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -161,7 +161,7 @@ const winner = (player, computer) => {
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
-      result.textContent = 'Player Won'
+      result.textContent = 'Player Won';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -172,12 +172,12 @@ const winner = (player, computer) => {
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
-      result.textContent = 'Player Won'
+      result.textContent = 'Player Won';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
   }
-}
+};
 
 // Funtion to run when game is over
 const gameOver = (playerOptions, movesLeft) => {
@@ -186,9 +186,9 @@ const gameOver = (playerOptions, movesLeft) => {
   const reload = document.querySelector('.reload');
   playerOptions.forEach(option => {
     option.style.display = 'none';
-  })
+  });
 
-  chooseMove.innerText = 'Game Over!'
+  chooseMove.innerText = 'Game Over!';
   movesLeft.style.display = 'none';
 
   if (playerScore > computerScore) {
@@ -214,8 +214,8 @@ const gameOver = (playerOptions, movesLeft) => {
   function handleClick() {
     window.location.reload();
   }
-  btnRestart.addEventListener('click', handleClick)
-}
+  btnRestart.addEventListener('click', handleClick);
+};
 
 playGame();
 
