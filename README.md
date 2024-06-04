@@ -42,3 +42,21 @@ People who use this website will endure a game against the computer which can re
 
 ## Bugs 
 
+- No bugs were found when validating.
+
+## Validator Testing 
+
+- JavaScript
+ - No errors returned when passsing through JSHint, only missing semi-colons which have been put into place.
+
+ - CSS
+  - No errors returned when passing through the official W3C CSS validator.
+
+- HTML
+ - No errors returned when passing through the official W3C validator.
+
+![Lighthouse](assets/images/lighthouse.jpg)
+
+## Unfixed Bugs 
+
+- There are no unfixed bugs.
