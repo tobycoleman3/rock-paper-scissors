@@ -66,14 +66,17 @@ const winner = (player, computer) => {
   computer = computer.toLowerCase();
   if (player === computer) {
     result.textContent = 'Tie';
+    result.style.color = 'grey';
   }
   else if (player == 'rock') {
     if (computer == 'paper') {
       result.textContent = 'Computer Won';
+      result.style.color = 'red';
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won';
+      result.style.color = '#308D46';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -81,10 +84,12 @@ const winner = (player, computer) => {
   else if (player == 'paper') {
     if (computer == 'scissors') {
       result.textContent = 'Computer Won';
+      result.style.color = 'red';
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won';
+      result.style.color = '#308D46';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -92,10 +97,12 @@ const winner = (player, computer) => {
   else if (player == 'lizard') {
     if (computer == 'rock') {
       result.textContent = 'Computer Won';
+      result.style.color = 'red';
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won';
+      result.style.color = '#308D46';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -103,10 +110,12 @@ const winner = (player, computer) => {
   else if (player == 'spock') {
     if (computer == 'lizard') {
       result.textContent = 'Computer Won';
+      result.style.color = 'red';
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won';
+      result.style.color = '#308D46';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -114,10 +123,12 @@ const winner = (player, computer) => {
   else if (player == 'scissors') {
     if (computer == 'spock') {
       result.textContent = 'Computer Won';
+      result.style.color = 'red';
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won';
+      result.style.color = '#308D46';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -125,10 +136,12 @@ const winner = (player, computer) => {
   else if (player == 'lizard') {
     if (computer == 'scissors') {
       result.textContent = 'Computer Won';
+      result.style.color = 'red';
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won';
+      result.style.color = '#308D46';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -136,10 +149,12 @@ const winner = (player, computer) => {
   else if (player == 'paper') {
     if (computer == 'lizard') {
       result.textContent = 'Computer Won';
+      result.style.color = 'red';
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won';
+      result.style.color = '#308D46';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -147,10 +162,12 @@ const winner = (player, computer) => {
   else if (player == 'spock') {
     if (computer == 'paper') {
       result.textContent = 'Computer Won';
+      result.style.color = 'red';
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won';
+      result.style.color = '#308D46';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -158,10 +175,12 @@ const winner = (player, computer) => {
   else if (player == 'rock') {
     if (computer == 'spock') {
       result.textContent = 'Computer Won';
+      result.style.color = 'red';
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won';
+      result.style.color = '#308D46';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -169,10 +188,12 @@ const winner = (player, computer) => {
   else if (player == 'scissors') {
     if (computer == 'rock') {
       result.textContent = 'Computer Won';
+      result.style.color = 'red';
       computerScore++;
       computerScoreBoard.textContent = computerScore;
     } else {
       result.textContent = 'Player Won';
+      result.style.color = '#308D46';
       playerScore++;
       playerScoreBoard.textContent = playerScore;
     }
@@ -206,7 +227,7 @@ const gameOver = (playerOptions, movesLeft) => {
   else {
     result.style.fontSize = '2rem';
     result.innerText = 'Tie!!';
-    result.style.color = 'black';
+    result.style.color = 'grey';
     result.style.textAlign = 'center';
   }
 
