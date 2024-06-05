@@ -14,6 +14,30 @@ This is targeted for any age person with any base of knowledge looking for a qui
 
 Being this website's only creator, my objective was to make a fun, simple game that kids could play at home. 
 
+# Strategy
+
+The goal is to make a well-functioning game for all ages.
+
+# Scope
+
+For the users i wanted to make the experience as simple as possible with minimilistic effort needed, whilst being based on a relatable TV series.
+
+# Structure
+
+To make sure the page is interesting and playing the game doesn't require scrolling or navigating, I wanted a one-page design that displays everything for the user.
+
+# Skeleton
+
+With all the important information centred throughout and the action buttons plainly visible and accessible, the website is designed to be clean and easy.
+
+**wireframe**
+the wireframe is designed using Balsamiq software and is in the [(PDF format)](assets/Rock,%20Paper,%20Scissors%20wireframe.pdf)
+
+# Surface 
+
+I chose a simple beige background with black lettering because it creates a striking contrast and is visually pleasing.
+
+
 ## Features
 
 # Game Buttons
