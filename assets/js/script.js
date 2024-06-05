@@ -23,7 +23,7 @@ let playerScore = 0;
 let computerScore = 0;
 let moves = 0;
 
-// Function to
+// Function to 
 const playGame = () => {
   const rockBtn = document.querySelector('.rock');
   const paperBtn = document.querySelector('.paper');
@@ -56,7 +56,11 @@ const playGame = () => {
   });
 };
 
-// How to decide winner
+/**
+ * How to decide winner
+ * @param {*} player Players choices to win
+ * @param {*} computer Computers choices to win
+ */
 const winner = (player, computer) => {
   const result = document.querySelector('.result');
   console.log("results:", result)
@@ -205,7 +209,11 @@ const winner = (player, computer) => {
   btnRestart.addEventListener('click', handleClick);
 };
 
-// Funtion to run when game is over
+/**
+ * Funtion to run when game is over
+ * @param {*} playerOptions To not allow any more moves
+ * @param {*} movesLeft To show no moves left
+ */
 const gameOver = (playerOptions, movesLeft) => {
   const chooseMove = document.querySelector('.move');
   const result = document.querySelector('.result');
