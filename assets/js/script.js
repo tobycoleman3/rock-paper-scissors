@@ -198,6 +198,11 @@ const winner = (player, computer) => {
       playerScoreBoard.textContent = playerScore;
     }
   }
+  const btnRestart = document.getElementById("restartBtn");
+  function handleClick() {
+    window.location.reload();
+  }
+  btnRestart.addEventListener('click', handleClick);
 };
 
 // Funtion to run when game is over
@@ -230,12 +235,6 @@ const gameOver = (playerOptions, movesLeft) => {
     result.style.color = 'grey';
     result.style.textAlign = 'center';
   }
-
-  const btnRestart = document.getElementById("restartBtn");
-  function handleClick() {
-    window.location.reload();
-  }
-  btnRestart.addEventListener('click', handleClick);
 };
 
 playGame();
