@@ -1,4 +1,4 @@
-## Rock, Paper, Scissors, Lizard, Spock!
+# Rock, Paper, Scissors, Lizard, Spock!
 
 This is a game's website based on the well known game; Rock, Paper, Scissors, with a twist created from the tv series 'The Big Bang Theory'. 
 
@@ -6,28 +6,36 @@ People who use this website will endure a game against the computer which can re
 
 ![Devives](assets/images/Screenshot%202024-06-04%20at%2011.22.08%20(2).jpg)
 
-# Features
+## UX
 
-- Game Buttons
+This is targeted for any age person with any base of knowledge looking for a quick and easy game to enjoy or pass time.
+
+## User Stories
+
+Being this website's only creator, my objective was to make a fun, simple game that kids could play at home. 
+
+## Features
+
+# Game Buttons
  - Action buttons for the players choice of move.
  - Rules button with a pop up modal to explain which move will beat other moves.
  - Restart button to replay the game once finished
 
 ![Features](assets/images/featuress.jpg)
 
-- Game Area
+# Game Area
  - Moves left function to inform the player how many turns are left of the game.
  - Score to inform the player on how many points the player and the computer have.
  - Choose move heading to promt the player into making a selction of the action buttons.
 
 ![GameArea](assets/images/game%20area.jpg)
 
-- Heading
+# Heading
  - Name of the game in bold text.
 
 ![Heading](assets/images/heading.jpg)
 
-- Rules
+# Rules
  - A pop up modal to describe the rules to the player (based on the TV series 'The Big Bang Theory')
 
 ![Rules](assets/images/rules.jpg)
@@ -46,13 +54,13 @@ People who use this website will endure a game against the computer which can re
 
 ## Validator Testing 
 
-- JavaScript
+# JavaScript
  - No errors returned when passsing through JSHint, only missing semi-colons which have been put into place.
 
- - CSS
+ # CSS
   - No errors returned when passing through the official W3C CSS validator.
 
-- HTML
+# HTML
  - No errors returned when passing through the official W3C validator.
 
 ![Lighthouse](assets/images/lighthouse.jpg)
@@ -63,7 +71,7 @@ People who use this website will endure a game against the computer which can re
 
 # Deployment
 
-  - The site was deployed to GitHub pages. The steps to deploy are as followed:
+  **The site was deployed to GitHub pages. The steps to deploy are as followed:**
     - In the GitHub repository, navigate to the settings tab.
     - From the source section drop-down menu, select the Master Branch.
     - Once the Master Branch has been selected, the page provided the link to the completed website.
