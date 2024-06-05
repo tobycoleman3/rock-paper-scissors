@@ -1,9 +1,9 @@
 // get the modal
-var modal = document.getElementById('rulesModal');
+const modal = document.getElementById('rulesModal');
 // get the button that opens the modal
-var btn = document.getElementById('rulesBtn');
+const btn = document.getElementById('rulesBtn');
 // get the span element that closes the modal
-var span = document.getElementsByClassName('close')[0];
+const span = document.getElementsByClassName('close')[0];
 // when the user clicks the button it opens the modal
 btn.onclick = function () {
   modal.style.display = "block";
