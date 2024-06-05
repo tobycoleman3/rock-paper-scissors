@@ -37,6 +37,12 @@ the wireframe is designed using Balsamiq software and is in the [(PDF format)](a
 
 I chose a simple beige background with black lettering because it creates a striking contrast and is visually pleasing.
 
+# Technologies
+
+1. HTML - To create a basic website
+2. CSS - To create a nice, standout front-end and to give a great user experience
+3. JavaScript - To make the website interactive with a random based computer game
+4. Balsamiq - To create a wireframe
 
 ## Features
 
@@ -72,22 +78,23 @@ I chose a simple beige background with black lettering because it creates a stri
 - I tested the restart button works at the end of the game.
 - I tested the action buttons all work when promted.
 
-## Bugs 
-
-- No bugs were found when validating.
-
 ## Validator Testing 
 
 # JavaScript
- - No errors returned when passsing through JSHint, only missing semi-colons which have been put into place.
+ - No errors returned when passsing through [JSHint](assets/readme-assets/JSHint.png), only missing semi-colons which have been put into place.
 
  # CSS
-  - No errors returned when passing through the official W3C CSS validator.
+  - No errors returned when passing through the official [W3C CSS validator](assets/readme-assets/CSS.png).
 
 # HTML
- - No errors returned when passing through the official W3C validator.
+ - No errors returned when passing through the official [W3C validator](assets/readme-assets/HTML.png).
 
-![Lighthouse](assets/images/lighthouse.jpg)
+# Accessibility
+- I tested the page through [Lighthouse](assets/readme-assets/Lighthouse2.png) to test the performance. 
+
+# Bugs 
+
+- No bugs were found when validating.
 
 ## Unfixed Bugs 
 
