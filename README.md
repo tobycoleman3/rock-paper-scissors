@@ -14,26 +14,26 @@ This is targeted for any age person with any base of knowledge looking for a qui
 
 Being this website's only creator, my objective was to make a fun, simple game that kids could play at home. 
 
-# Strategy
+## Strategy
 
 The goal is to make a well-functioning game for all ages.
 
-# Scope
+## Scope
 
 For the users i wanted to make the experience as simple as possible with minimilistic effort needed, whilst being based on a relatable TV series.
 
-# Structure
+## Structure
 
 To make sure the page is interesting and playing the game doesn't require scrolling or navigating, I wanted a one-page design that displays everything for the user.
 
-# Skeleton
+## Skeleton
 
 With all the important information centred throughout and the action buttons plainly visible and accessible, the website is designed to be clean and easy.
 
 **wireframe**
 the wireframe is designed using Balsamiq software and is in the [(PDF format)](assets/Rock,%20Paper,%20Scissors%20wireframe.pdf)
 
-# Surface 
+## Surface 
 
 I chose a simple beige background with black lettering because it creates a striking contrast and is visually pleasing.
 
@@ -44,28 +44,28 @@ I chose a simple beige background with black lettering because it creates a stri
 3. JavaScript - To make the website interactive with a random based computer game
 4. Balsamiq - To create a wireframe
 
-## Features
+# Features
 
-# Game Buttons
+## Game Buttons
  - Action buttons for the players choice of move.
  - Rules button with a pop up modal to explain which move will beat other moves.
  - Restart button to replay the game once finished
 
 ![Features](assets/images/featuress.jpg)
 
-# Game Area
+## Game Area
  - Moves left function to inform the player how many turns are left of the game.
  - Score to inform the player on how many points the player and the computer have.
  - Choose move heading to promt the player into making a selction of the action buttons.
 
 ![GameArea](assets/images/game%20area.jpg)
 
-# Heading
+## Heading
  - Name of the game in bold text.
 
 ![Heading](assets/images/heading.jpg)
 
-# Rules
+## Rules
  - A pop up modal to describe the rules to the player (based on the TV series 'The Big Bang Theory')
 
 ![Rules](assets/images/rules.jpg)
@@ -80,19 +80,19 @@ I chose a simple beige background with black lettering because it creates a stri
 
 ## Validator Testing 
 
-# JavaScript
+### JavaScript
  - No errors returned when passsing through [JSHint](assets/readme-assets/JSHint.png), only missing semi-colons which have been put into place.
 
- # CSS
+### CSS
   - No errors returned when passing through the official [W3C CSS validator](assets/readme-assets/CSS.png).
 
-# HTML
+### HTML
  - No errors returned when passing through the official [W3C validator](assets/readme-assets/HTML.png).
 
-# Accessibility
+### Accessibility
 - I tested the page through [Lighthouse](assets/readme-assets/Lighthouse2.png) to test the performance. 
 
-# Bugs 
+## Bugs 
 
 - No bugs were found when validating.
 
@@ -109,7 +109,7 @@ I chose a simple beige background with black lettering because it creates a stri
   
   The link to the website is as followed: [Rock, Paper, Scissors, Lizard, Spock!](https://tobycoleman3.github.io/rock-paper-scissors/)
 
-  # Credits
+  ## Credits
 
   - I would like to give credit to my mentor Femi who guided me with the design of the website and advice on coding.
   - I would like to give credit to the tutors at Code Institute for help on technical difficulties i encountered when building the website.
